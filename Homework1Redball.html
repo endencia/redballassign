@@ -1,0 +1,40 @@
+<! DOCTYPE>
+<HTML>
+    <head>
+        <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
+        <script type="text/javascript"> 
+          function sayhello()
+          {
+              alert('Say hello');
+          }
+          function moveright()
+              {
+              redball.left = redball.left +10;
+              }
+          
+          function moveleft()
+              { 
+                redball.left =  redball.left -10;
+              }
+          
+           function moveup()
+               {  
+                 redball.top = redball.top -10;
+               }
+              
+           function movedown()
+               {
+                   (redball.top = redball.top +10);
+               }
+        </script>
+    </head>
+       <body> 
+       <img id="redball" src="http://lrn.icstars.org/redball.jpg" </image>;
+       <button onclick='sayhello()'> Hello world </button>
+       <button onclick= 'moveright()'> Move Right </button>
+       <button onclick= 'moveleft()'> Move  Left </button>
+       <button onclick= 'moveup()' > Move Up</button>
+       <button onclick= 'movedown()'> Move Down </button>
+     </body>
+</HTML>
+ 
