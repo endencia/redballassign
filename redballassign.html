@@ -9,7 +9,7 @@
           }
           function moveright()
           {
-              if (redball.left == +10)
+              if (redball.left == +480)
               {
                 console.log('right wall hit')
               }
@@ -20,13 +20,13 @@
           }
           function moveleft()
           {   
-              if (redball.left== -10)
+              if (redball.left == -5)
               {
                 console.log ('left wall hit')
               }
                  else 
               { 
-                redball.left =  redball.left -10;
+                redball.left =  redball.left -5;
               }
           }
            function moveup()
@@ -109,113 +109,108 @@
                moveup();
               
            }
-           
-            function movetriangle()
-            {
-                // slide down //
-                movedown();
-                movedown();
-                movedown();
-                movedown();
-                movedown();
-                movedown();
-                movedown();
-                movedown();
-                
-                //slide right // 
-                moveright();
-                moveright();
-                moveright();
-                moveright();
-                moveright();
-                moveright();
-                moveright();
-                
-                //slide up left//
-                moveupleft();
-                moveupleft();
-                moveupleft(); 
-                moveupleft();
-                moveupleft();
-                moveupleft();
-                moveupleft();
-                    
+           function movetriangle()
+           {
+               //slide diagonal to right//
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               
+               //slide left//
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               
+               //slide up//
+               moveup();
+               moveup();
+               moveup();
+               moveup();
+               moveup();
+               moveup();
+               moveup();
             }
-                function moveoctagon()
+            function moveoctagon()
             {
-                    
-                //slide moveright//
-                moveright();
-                moveright();
-                moveright();
-                moveright();
-                moveright();
-                moveright();
-                moveright();
-                
-                //slide moverightdown/
-                 movedownright();
-                 movedownright();  
-                 movedownright();
-                 movedownright();
-                 movedownright();
-                 movedownright();
-                 movedownright();
-                 
-                 //slide down//
-                movedown();
-                movedown();
-                movedown();
-                movedown();
-                movedown();
-                movedown();
-                movedown();
-                
-                //slide downleft//
-                movedownleft();
-                movedownleft();
-                movedownleft();
-                movedownleft();
-                movedownleft();
-                movedownleft();
-                movedownleft();
-                
-                //slide left//
-                moveleft();
-                moveleft();
-                moveleft();
-                moveleft();
-                moveleft();
-                moveleft();
-                moveleft();
-                
-                //slide up left//
-                moveupleft();
-                moveupleft();
-                moveupleft();
-                moveupleft();
-                moveupleft();
-                moveupleft();
-                moveupleft();
-                
-                //slide up//
-                moveup();
-                moveup();
-                moveup();
-                moveup();
-                moveup();
-                moveup();
-                moveup();
-                
-                //slide up right//
-                moveupright();
-                moveupright();
-                moveupright();
-                moveupright();
-                moveupright();
-                moveupright();
-                moveupright();
-                
+                //slide to right//
+               moveright();
+               moveright();
+               moveright();
+               moveright();
+               moveright();
+               moveright();
+               moveright();
+               
+               //slide down right//
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               movedownright();
+               
+               //slide down //
+               movedown();
+               movedown();
+               movedown();
+               movedown();
+               movedown();
+               movedown();
+               movedown();
+               
+               //slide downleft//
+               movedownleft();
+               movedownleft();
+               movedownleft();
+               movedownleft();
+               movedownleft();
+               movedownleft();
+               movedownleft();
+               
+               //slide left//
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               moveleft();
+               
+               //slide upleft//
+               moveupleft();
+               moveupleft();
+               moveupleft();
+               moveupleft();
+               moveupleft();
+               moveupleft();
+               moveupleft();
+               
+               //slide up//
+               moveup();
+               moveup();
+               moveup();
+               moveup();
+               moveup();
+               moveup();
+               moveup();
+               
+               //slide upright
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
+               moveupright();
             }
                 
                
@@ -224,16 +219,16 @@
     </head>
        <body> 
        <img id="redball" src="http://lrn.icstars.org/redball.jpg" </image>;
-       <button onclick='sayhello()'> Hello world </button>;
-       <button onclick= 'moveright()'> Move Right </button>;
-       <button onclick= 'moveleft()'> Move  Left </button>;
-       <button onclick= 'moveup()' > Move Up</button>;
-       <button onclick= 'movedown()'> Move Down </button>;
-       <button onclick= 'movesquare()'> Move Square </button>;
+       <button onclick='sayhello()'> Hello world </button>
+       <button onclick= 'moveright()'> Move Right </button>
+       <button onclick= 'moveleft()'> Move  Left </button>
+       <button onclick= 'moveup()' > Move Up</button>
+       <button onclick= 'movedown()'> Move Down </button>
+       <button onclick= 'movesquare()'> Move Square </button>
        <button onclick= 'movedownright()'> Move Diagonal down to right </button>;
        <button onclick= 'moveupleft()'> Move up left</button>;
-       <button onclick= 'movetriangle()'> Move Triangle  </button>;
-       <button onclick= 'moveoctagon()'> Move Octagon </button>;
+       <button onclick= 'movetriangle()'> Move Triangle</button> 
+       <button onclick= 'moveoctagon()'> Move Octagon</button>
         </body>
 </HTML>
  
